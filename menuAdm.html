@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=" Alura Geek" />
+    <meta
+      name="keywords"
+      content="Alura, Geek, Games, Consoles, Star Wars, Sonic, Atari,Yoda, Gameboy"
+    />
+    <meta name="author" content="Lucas Oliveira Costa" />
+    <title>Alura Geek | Login</title>
+    <link
+      rel="shortcut icon"
+      href="asset/img/controle.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="asset/style/reset.css" />
+    <link rel="stylesheet" href="asset/style/style.css" />
+    <link rel="stylesheet" href="asset/style/menuADm/menuAdm.css" />
+  </head>
+  <body>
+    <header class="cabecalho container">
+      <div class="cabecalho__ladoDireito">
+        <a href="index.html" id="cabecalho__logo"
+          ><img
+            src="asset/img/Logo.jpg"
+            alt="Logo Alura Geek"
+            id="cabecalho__logo"
+        /></a>
+        <div class="cabecalho__campo-pesquisa">
+          <label for="pesquisa"></label>
+          <input
+            type="search"
+            name="pesquisa"
+            id="pesquisa"
+            placeholder="O que deseja encontrar?"
+            class="cabecalho__pesquisa"
+          />
+          <img
+            src="asset/img/Vector.jpg"
+            alt="Lupa de pesquisa"
+            class="cabecalho__icone-pesquisa"
+          />
+        </div>
+      </div>
+
+      <a href="asset/style/login/login.html">
+        <button class="cabecalho__botao-login">Menu administrador</button>
+      </a>
+
+      <img
+        class="cabecalho__icone-pesquisa-mobile"
+        src="asset/img/Vector.jpg"
+        alt="Lupa de pesquisa"
+      />
+    </header>
+    
+    <main class="menu">
+
+      <filedset class=" container">
+          <form action="" >
+            <legend class="menu__cabecalho">Adicionar novo produto</legend>
+            <div class="menu__tablet">
+              <div class="menu__img">
+                <div class="menu__arrastar"></div>
+               <i class="menu__icone-mais"></i>
+                <p class="menu__texto"></p>
+              </div>
+              <p class="menu__span">ou</p>
+              <div class="menu__img_arquivo">
+                
+                <label for="menu__img-procura" id="label"> Procure no seu tablet</label>
+                <input type="file" id="menu__img-procura" class="menu__img-procura-input" >
+              </div>
+            </div>
+
+            <div class="menu__preencher">
+
+              <div class="menu__div">
+                <label for="menu__nome" class="menu__nome-label">Nome do produto</label>
+                <input type="text" id="menu__nome" >
+              </div>
+              <div class="menu__div">
+                <label for="menu__preco" class="menu__preco-label">Preço do produto</label>
+                <input type="text" id="menu__preco" class="menu__preco">
+              </div>
+              <div class="menu__div">
+                <label for="menu__descricao" class="menu__descricao-label">Descrição do produto</label>
+                <textarea name="menu__descricao" id="menu__descricao" class="menu__descricao" cols="30" rows="10"></textarea>
+              </div>
+              <button class="menu__botao">Adicionar produto</button>
+            </div>
+          </form>
+      </filedset>
+
+
+        
+    </main>
+
+     
+    
+    </section>
+    <footer class="rodape container">
+      <section class="rodape__institucional">
+        <div class="rodape__secao-link">
+          <img
+            src="asset/img/Logo.jpg"
+            alt="Logo da Alura Geek"
+            class="rodape__logo"
+          />
+          <ul class="rodape__link">
+            <li><a href="#">Quem somos nós</a></li>
+            <li><a href="#">Politica de privacidade</a></li>
+            <li><a href="#">Programa fidelidade</a></li>
+            <li><a href="#">Nossas lojas</a></li>
+            <li><a href="#">Quero ser franqueado</a></li>
+            <li><a href="#">Anuncie aqui</a></li>
+          </ul>
+        </div>
+        <div class="rodape__contato">
+          <h3 class="rodape__h3">Fale conosco</h3>
+          <form action="">
+            <label for="nome"></label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Nome"
+              class="rodape__campo-nome"
+            />
+            <label for="mensagem"></label>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              cols="30"
+              rows="5"
+              placeholder="Escreva uma mensagem"
+              class="rodape__campo-msg"
+            ></textarea>
+          </form>
+
+          <button type="submit" class="rodape__botao-msg">
+            Enviar mensagem
+          </button>
+        </div>
+      </section>
+      <section class="rodape__fim">
+        <h4>
+          Desenvolvido por
+          <a href="https://github.com/LucasCosta26" target="_blank"
+            ><strong>Lucas Costa</strong></a
+          >
+        </h4>
+
+        <h4>2022</h4>
+      </section>
+    </footer>
+  </body>
+</html>

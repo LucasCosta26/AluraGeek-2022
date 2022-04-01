@@ -1,0 +1,130 @@
+.produto{
+    display: flex;
+    flex-direction: column;
+    background-color:  var(--preto-5);
+    
+}
+  .produto__secao{
+      
+  }
+  .produto__img{
+    width: 100%;
+    height: 20rem;
+  }
+  .produto__sobre{
+      padding: 1rem 1rem 2rem 1rem;
+      
+  }
+  .produto__nome{
+      font-size: 1.3rem;
+      font-weight: 500;
+      padding-bottom: 0.5rem;
+  }
+  .produto__valor{
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+
+  }
+  .produto__descricao{
+    font-size: 0.87rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+    line-height: normal;
+
+  }
+  .produto__similares
+  .produto__titulo{
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0 0 1rem 1rem;
+  }
+   .produtos__secao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 0 1rem 1rem 1rem;
+}
+.produtos__item {
+ 
+}
+
+.produtos__img {
+  width: 9.75rem;
+  height: 10.87rem;
+}
+.produtos__descricao {
+}
+.produto__nome {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.produto__valor {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.produto__link {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--azul-100);
+}
+.produtos__item-fora {
+  display: none;
+} 
+@media screen and (min-width: 730px) {
+    .produto__secao{ /*essa representa a primeira parte*/
+        display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
+    padding: 2rem 2rem 4rem 2rem;
+    }
+ 
+    .produtos__secao { /*essa os produtos similares*/
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 0 2rem 2rem 2rem;
+      gap: 10px;
+    } 
+    .produto__img{
+        width: 252px;
+        height: 157px;
+      }
+    .produto__sobre{
+        padding: 0 0 0 1rem;
+    }
+    .produto__descricao{
+        padding: 0;
+    }
+    .produtos__titulo {
+      font-size: 1.4rem;
+      padding: 0 0 1rem 2rem;
+    }
+    .produtos__img {
+      width: 13.5rem;
+      height: 10rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .produto__secao{ /*essa representa a primeira parte*/
+       align-items: center;
+    padding: 4rem 9.9rem 4rem 9.9rem;
+    }
+    
+    .produtos__secao {/*essa os produtos similares*/
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 1rem;
+      padding: 0 9.9rem 4rem 9.9rem;
+    }
+   
+    .produtos__item-fora {
+      display: inline;
+    }
+    .produtos__titulo {
+        padding: 0 0 1rem 10rem;
+ 
+  }}

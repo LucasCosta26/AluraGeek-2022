@@ -1,0 +1,18 @@
+@import url(cabecalho.css);
+@import url(rodape.css);
+:root{
+  --branco: #ffffff;
+  --azul-100: #2A7AE4;
+  --azul-80:#5595E9;
+  --azul-20: #D4E4FA;
+  --azul-10: #EAF2FD;
+  --azul:#eaf7fa;
+  --preto: #464646;
+  --preto-5: #E5E5E5;
+
+}
+body{
+  font-family: "Raleway", sans-serif ;
+  box-sizing: border-box;
+ 
+}

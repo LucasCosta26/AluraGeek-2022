@@ -1,0 +1,93 @@
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5em;
+  padding: 0 16px;
+}
+#cabecalho__logo {
+  width: 6.25rem;
+  height: 2rem;
+}
+.cabecalho__campo-pesquisa {
+  display: none;
+}
+.cabecalho__pesquisa {
+  outline: none;
+}
+.cabecalho__botao-login {
+  border: 1px solid var(--azul-100);
+  color: var(--azul-100);
+  width: 8.2rem;
+  height: 2.5rem;
+}
+.cabecalho__botao-login:hover {
+  background-color: var(--azul-20);
+}
+
+@media screen and (min-width: 730px) {
+  .cabecalho {
+    padding: 0 2rem;
+  }
+  .cabecalho__ladoDireito {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 25rem;
+  }
+  .cabecalho__campo-pesquisa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 17rem;
+    height: 2.5rem;
+    background-color: var(--preto-5);
+    border-radius: 25px;
+  }
+  .cabecalho__pesquisa {
+    background-color: var(--preto-5);
+    width: 20rem;
+    padding-left: 5px;
+  }
+
+  .cabecalho__icone-pesquisa {
+    padding: 0 0.7rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  .cabecalho__icone-pesquisa-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cabecalho {
+    height: 7.2rem;
+    margin: 0 152px;
+    padding: 0;
+  }
+  .cabecalho__ladoDireito {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 37.5rem;
+  }
+  .cabecalho__campo-pesquisa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 24.5rem;
+    height: 2.5rem;
+    background-color: var(--preto-5);
+    border-radius: 25px;
+  }
+  .cabecalho__pesquisa {
+    background-color: var(--preto-5);
+    width: 20rem;
+    padding-left: 5px;
+  }
+  #cabecalho__logo {
+    width: 11rem;
+    height: 3.12rem;
+  }
+}

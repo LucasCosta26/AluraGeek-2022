@@ -1,0 +1,114 @@
+.rodape__institucional {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--azul-10);
+  
+}
+.rodape__secao-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rodape__logo {
+  margin: 1.62rem 0;
+  width: 11rem;
+  height: 3.12rem;
+}
+.rodape__link {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+li {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+li:hover {
+  cursor: pointer;
+}
+.rodape__contato {
+  padding: 0 1rem;
+}
+
+.rodape__h3 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.rodape__campo-nome {
+  width: 100%;
+  height: 3.5rem;
+  outline: none;
+  padding: 3px 0 0 5px;
+  margin-bottom: 1rem;
+}
+.rodape__campo-msg {
+  width: 100%;
+  outline: none;
+  padding: 5px 0 0 5px;
+  margin-bottom: 1rem;
+}
+.rodape__botao-msg {
+  background-color: var(--azul-100);
+  width: 9.43rem;
+  height: 2.5rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--branco);
+  margin-bottom: 16px;
+}
+.rodape__botao-msg:hover {
+  background-color: var(--azul-80);
+}
+.rodape__fim {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+@media screen and (min-width: 730px) {
+  .rodape__institucional {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+
+  .rodape__link {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .rodape {
+    background-color: var(--azul-10);
+  }
+  .rodape__institucional {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 77px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .rodape__secao-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40rem;
+  }
+  .rodape__contato {
+    width: 40rem;
+  }
+  .rodape__logo {
+    width: 150px;
+    height: 50px;
+    padding-left: 3rem;
+  }
+  .rodape__fim {
+    background-color: var(--branco);
+  }
+}

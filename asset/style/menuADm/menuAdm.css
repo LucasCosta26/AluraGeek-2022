@@ -1,0 +1,132 @@
+.menu {
+  background-color: var(--preto-5);
+  padding: 0 1rem;
+}
+.menu__cabecalho {
+  font-size: 1.37rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+.menu__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 200px;
+  background-color: var(--branco);
+  border: 1px dashed #3a3a3a;
+}
+.menu__icone-mais {
+  background-image: url(../../img/vector/Vector.svg);
+  width: 20px;
+
+  height: 20px;
+}
+.menu__texto::after{
+  content:"Adicionar uma imagem para o produto" ;}
+.menu__img_arquivo, .menu__span {
+  display: none;
+}
+
+.menu__preencher {
+  display: flex;
+  flex-direction: column;
+}
+.menu__div {
+  display: flex;
+  flex-direction: column;
+
+  margin: 1rem 0;
+  background-color: var(--branco);
+  box-shadow: 2px 3px rgba(0, 0, 0, 0.119);
+}
+.menu__descricao-label,
+.menu__preco-label,
+.menu__nome-label {
+  padding: 10px 10px;
+}
+input,
+textarea {
+  outline: none;
+}
+.menu__botao {
+  width: 100%;
+  height: 3.1rem;
+  color: var(--branco);
+  background-color: var(--azul-100);
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 730px) {
+  .menu__cabecalho {
+    padding: 2rem 0;
+  }
+  .menu__tablet, .menu__img_arquivo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 152px;
+    width: 254px;
+    background-color: var(--branco);
+    border: 1px dashed #3a3a3a;
+  }
+  .menu__icone-mais {
+    background-image: url(../../img/vector/Vector2.svg);
+    width: 32px;
+  
+    height: 32px;
+  }
+  .menu__texto::after{
+    content:"adicionar uma imagem" ;
+    
+  }
+  .menu__img_arquivo {
+    display: flex;
+    flex-direction: row;
+  }
+  #label{
+    width: 191px;
+    height: 50px;
+    border:2px
+     solid var(--azul-100);
+     color: var(--azul-100);
+    background-color: var(--branco);
+text-align: center; 
+padding-top: 30px;
+ }
+  input[type="file"]{
+    display: none;
+  }
+  
+  .menu__descricao-label,
+  .menu__preco-label,
+  .menu__nome-label {
+    padding: 15px 15px;
+  }
+  input,
+  textarea {
+    outline: none;
+    padding: 10px 10px;
+  }
+  .menu__botao {
+    width: 100%;
+    height: 3.1rem;
+    color: var(--branco);
+    background-color: var(--azul-100);
+    margin-bottom: 1rem;
+  }
+  .menu__span{
+    font-size: 1rem;
+    display: flex;
+  }
+  @media screen and (width: 1024px) {
+    .container{
+      width: 35rem;
+    }
+  }}
